@@ -1,0 +1,225 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Tue Feb 11 14:45:06 2025
+| Host         : bhashini-laptop running 64-bit Ubuntu 18.04.1 LTS
+| Command      : report_utilization -file /home/bhashini/Desktop/spartan_p3_new/scripting/output/post_synth_util.rpt
+| Design       : sp7_cal3_wrapper
+| Device       : 7s25csga324-2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+1.1 Summary of Registers by Type
+2. Memory
+3. DSP
+4. IO and GT Specific
+5. Clocking
+6. Specific Feature
+7. Primitives
+8. Black Boxes
+9. Instantiated Netlists
+
+1. Slice Logic
+--------------
+
++----------------------------+-------+-------+-----------+-------+
+|          Site Type         |  Used | Fixed | Available | Util% |
++----------------------------+-------+-------+-----------+-------+
+| Slice LUTs*                |  8430 |     0 |     14600 | 57.74 |
+|   LUT as Logic             |  7898 |     0 |     14600 | 54.10 |
+|   LUT as Memory            |   532 |     0 |      5000 | 10.64 |
+|     LUT as Distributed RAM |   192 |     0 |           |       |
+|     LUT as Shift Register  |   340 |     0 |           |       |
+| Slice Registers            | 12705 |     0 |     29200 | 43.51 |
+|   Register as Flip Flop    | 12705 |     0 |     29200 | 43.51 |
+|   Register as Latch        |     0 |     0 |     29200 |  0.00 |
+| F7 Muxes                   |    97 |     0 |      7300 |  1.33 |
+| F8 Muxes                   |    10 |     0 |      3650 |  0.27 |
++----------------------------+-------+-------+-----------+-------+
+* Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 7     |          Yes |           - |          Set |
+| 244   |          Yes |           - |        Reset |
+| 575   |          Yes |         Set |            - |
+| 11883 |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. Memory
+---------
+
++-------------------+------+-------+-----------+-------+
+|     Site Type     | Used | Fixed | Available | Util% |
++-------------------+------+-------+-----------+-------+
+| Block RAM Tile    |   38 |     0 |        45 | 84.44 |
+|   RAMB36/FIFO*    |   36 |     0 |        45 | 80.00 |
+|     RAMB36E1 only |   36 |       |           |       |
+|   RAMB18          |    4 |     0 |        90 |  4.44 |
+|     RAMB18E1 only |    4 |       |           |       |
++-------------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+3. DSP
+------
+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| DSPs           |    3 |     0 |        80 |  3.75 |
+|   DSP48E1 only |    3 |       |           |       |
++----------------+------+-------+-----------+-------+
+
+
+4. IO and GT Specific
+---------------------
+
++-----------------------------+------+-------+-----------+-------+
+|          Site Type          | Used | Fixed | Available | Util% |
++-----------------------------+------+-------+-----------+-------+
+| Bonded IOB                  |  125 |   125 |       150 | 83.33 |
+|   IOB Master Pads           |   60 |       |           |       |
+|   IOB Slave Pads            |   60 |       |           |       |
+|   IOB Flip Flops            |    4 |     4 |           |       |
+| Bonded IPADs                |    0 |     0 |         2 |  0.00 |
+| PHY_CONTROL                 |    0 |     0 |         3 |  0.00 |
+| PHASER_REF                  |    0 |     0 |         3 |  0.00 |
+| OUT_FIFO                    |    0 |     0 |        12 |  0.00 |
+| IN_FIFO                     |    0 |     0 |        12 |  0.00 |
+| IDELAYCTRL                  |    0 |     0 |         3 |  0.00 |
+| IBUFDS                      |    2 |     2 |       144 |  1.39 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        12 |  0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        12 |  0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       150 |  0.00 |
+| ILOGIC                      |    4 |     4 |       150 |  2.67 |
+|   IFF_Register              |    4 |     4 |           |       |
+| OLOGIC                      |    2 |     0 |       150 |  1.33 |
+|   ODDR                      |    2 |       |           |       |
++-----------------------------+------+-------+-----------+-------+
+
+
+5. Clocking
+-----------
+
++------------+------+-------+-----------+--------+
+|  Site Type | Used | Fixed | Available |  Util% |
++------------+------+-------+-----------+--------+
+| BUFGCTRL   |   12 |     0 |        32 |  37.50 |
+| BUFIO      |    0 |     0 |        12 |   0.00 |
+| MMCME2_ADV |    3 |     0 |         3 | 100.00 |
+| PLLE2_ADV  |    0 |     0 |         3 |   0.00 |
+| BUFMRCE    |    0 |     0 |         6 |   0.00 |
+| BUFHCE     |    0 |     0 |        48 |   0.00 |
+| BUFR       |    0 |     0 |        12 |   0.00 |
++------------+------+-------+-----------+--------+
+
+
+6. Specific Feature
+-------------------
+
++-------------+------+-------+-----------+--------+
+|  Site Type  | Used | Fixed | Available |  Util% |
++-------------+------+-------+-----------+--------+
+| BSCANE2     |    1 |     0 |         4 |  25.00 |
+| CAPTUREE2   |    0 |     0 |         1 |   0.00 |
+| DNA_PORT    |    0 |     0 |         1 |   0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |   0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |   0.00 |
+| ICAPE2      |    0 |     0 |         2 |   0.00 |
+| STARTUPE2   |    1 |     0 |         1 | 100.00 |
+| XADC        |    0 |     0 |         1 |   0.00 |
++-------------+------+-------+-----------+--------+
+
+
+7. Primitives
+-------------
+
++------------+-------+---------------------+
+|  Ref Name  |  Used | Functional Category |
++------------+-------+---------------------+
+| FDRE       | 11883 |        Flop & Latch |
+| LUT6       |  3417 |                 LUT |
+| LUT3       |  1649 |                 LUT |
+| LUT4       |  1409 |                 LUT |
+| LUT5       |  1341 |                 LUT |
+| LUT2       |  1179 |                 LUT |
+| FDSE       |   575 |        Flop & Latch |
+| LUT1       |   365 |                 LUT |
+| CARRY4     |   323 |          CarryLogic |
+| SRL16E     |   251 |  Distributed Memory |
+| FDCE       |   244 |        Flop & Latch |
+| RAMD32     |   192 |  Distributed Memory |
+| SRLC32E    |   127 |  Distributed Memory |
+| MUXF7      |    97 |               MuxFx |
+| OBUF       |    48 |                  IO |
+| IBUF       |    44 |                  IO |
+| RAMB36E1   |    36 |        Block Memory |
+| OBUFT      |    36 |                  IO |
+| BUFG       |    11 |               Clock |
+| SRLC16E    |    10 |  Distributed Memory |
+| MUXF8      |    10 |               MuxFx |
+| FDPE       |     7 |        Flop & Latch |
+| RAMB18E1   |     4 |        Block Memory |
+| MMCME2_ADV |     3 |               Clock |
+| DSP48E1    |     3 |    Block Arithmetic |
+| ODDR       |     2 |                  IO |
+| IBUFDS     |     2 |                  IO |
+| STARTUPE2  |     1 |              Others |
+| BUFGCTRL   |     1 |               Clock |
+| BSCANE2    |     1 |              Others |
++------------+-------+---------------------+
+
+
+8. Black Boxes
+--------------
+
++------------+------+
+|  Ref Name  | Used |
++------------+------+
+| dbg_hub_CV |    1 |
++------------+------+
+
+
+9. Instantiated Netlists
+------------------------
+
++--------------------------------+------+
+|            Ref Name            | Used |
++--------------------------------+------+
+| sp7_cal3_vio_main_config_0     |    1 |
+| sp7_cal3_vio_clock_measures_0  |    1 |
+| sp7_cal3_vio_clk_pwr_enable_0  |    1 |
+| sp7_cal3_vio_ZU_status_0       |    1 |
+| sp7_cal3_vio_PLL_config_0      |    1 |
+| sp7_cal3_vio_0_0               |    1 |
+| sp7_cal3_util_gnss_clk_buf_0_0 |    1 |
+| sp7_cal3_util_ds_buf_0_2       |    1 |
+| sp7_cal3_util_ds_buf_0_1       |    1 |
+| sp7_cal3_util_ds_buf_0_0       |    1 |
+| sp7_cal3_proc_sys_reset_1_0    |    1 |
+| sp7_cal3_proc_sys_reset_0_1    |    1 |
+| sp7_cal3_proc_sys_reset_0_0    |    1 |
+| sp7_cal3_mmcm_50Mhz_0          |    1 |
+| sp7_cal3_ila_0_0               |    1 |
+| sp7_cal3_clk_wiz_10_OCXO_0     |    1 |
++--------------------------------+------+
+
+

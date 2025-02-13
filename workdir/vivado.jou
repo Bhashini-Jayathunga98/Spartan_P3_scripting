@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Feb 11 14:38:33 2025
+# Process ID: 128066
+# Current directory: /home/bhashini/Desktop/spartan_p3_new/scripting/workdir
+# Command line: vivado -mode batch -source /home/bhashini/Desktop/spartan_p3_new/scripting/scripts/non_project_mode_script.tcl
+# Log file: /home/bhashini/Desktop/spartan_p3_new/scripting/workdir/vivado.log
+# Journal file: /home/bhashini/Desktop/spartan_p3_new/scripting/workdir/vivado.jou
+#-----------------------------------------------------------
+source /home/bhashini/Desktop/spartan_p3_new/scripting/scripts/non_project_mode_script.tcl

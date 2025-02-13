@@ -1,0 +1,169 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "parallel_to_AXI",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_none",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "wdata"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "parallel_to_AXI",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_none",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "wadd"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "parallel_to_AXI",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_ovld",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "rdata"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "parallel_to_AXI",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_none",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "radd"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "parallel_to_AXI",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [{
+                "name": "port",
+                "value": "cmd"
+              }]
+          }
+        },
+        {
+          "functionName": "parallel_to_AXI",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_ovld",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "sta"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "parallel_to_AXI",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "m_axi",
+                "value": ""
+              },
+              {
+                "name": "depth",
+                "value": "1024"
+              },
+              {
+                "name": "port",
+                "value": "AXI"
+              },
+              {
+                "name": "offset",
+                "value": "direct"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "parallel_to_AXI",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "parallel_to_AXI"
+              }]
+          }
+        },
+        {
+          "functionName": "parallel_to_AXI",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "enable_flush",
+                "value": ""
+              }]
+          }
+        },
+        {
+          "functionName": "parallel_to_AXI",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "parallel_to_AXI"
+              }]
+          }
+        }
+      ]
+    }]}

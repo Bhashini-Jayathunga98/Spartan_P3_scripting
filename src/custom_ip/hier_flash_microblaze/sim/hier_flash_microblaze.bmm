@@ -1,0 +1,23 @@
+WORKFLOW_OPERATION simulation,dialog;
+
+DEFINE_MEMORY_TYPE hier_microblaze_microblaze_0_local_memory_lmb_bram_128K_6_MEM_DEVICE [0x00020000] 32;
+DEFINE_MEMORY_TYPE hier_flash_hier_ctrl_brams_axi_bram_ctrl_0_bram_4K_6_MEM_DEVICE [0x00001000] 32;
+DEFINE_MEMORY_TYPE hier_flash_hier_update_brams_axi_bram_ctrl_0_bram_8K_6_MEM_DEVICE [0x00002000] 32;
+
+ADDRESS_MAP hier_microblaze_microblaze_0 MICROBLAZE-LE 100 hier_microblaze/microblaze_0
+   ADDRESS_SPACE hier_microblaze_microblaze_0_local_memory_lmb_bram_128K_6_ADDR_SPACE hier_microblaze_microblaze_0_local_memory_lmb_bram_128K_6_MEM_DEVICE  [0x00000000:0x0001FFFF] hier_microblaze/microblaze_0_local_memory/dlmb_bram_if_cntlr
+     BUS_BLOCK
+      hier_microblaze_microblaze_0_local_memory_lmb_bram_128K_6_BUS_BLK [31:0] INPUT = "hier_flash_microblaze_lmb_bram_0.mem";
+     END_BUS_BLOCK;
+   END_ADDRESS_SPACE;
+   ADDRESS_SPACE hier_flash_hier_ctrl_brams_axi_bram_ctrl_0_bram_4K_6_ADDR_SPACE hier_flash_hier_ctrl_brams_axi_bram_ctrl_0_bram_4K_6_MEM_DEVICE  [0x00100000:0x00100FFF] hier_flash/hier_ctrl_brams/axi_bram_ctrl_1
+     BUS_BLOCK
+      hier_flash_hier_ctrl_brams_axi_bram_ctrl_0_bram_4K_6_BUS_BLK [31:0] INPUT = "hier_flash_microblaze_axi_bram_ctrl_0_bram_1.mem";
+     END_BUS_BLOCK;
+   END_ADDRESS_SPACE;
+   ADDRESS_SPACE hier_flash_hier_update_brams_axi_bram_ctrl_0_bram_8K_6_ADDR_SPACE hier_flash_hier_update_brams_axi_bram_ctrl_0_bram_8K_6_MEM_DEVICE  [0x00110000:0x00111FFF] hier_flash/hier_update_brams/axi_bram_ctrl_1
+     BUS_BLOCK
+      hier_flash_hier_update_brams_axi_bram_ctrl_0_bram_8K_6_BUS_BLK [31:0] INPUT = "hier_flash_microblaze_axi_bram_ctrl_0_bram_0.mem";
+     END_BUS_BLOCK;
+   END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

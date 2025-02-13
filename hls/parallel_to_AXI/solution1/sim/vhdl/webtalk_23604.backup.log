@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Jul 16 16:32:20 2022
+# Process ID: 23604
+# Current directory: C:/xil2/etteplan-sp7-cal2/common/hls/parallel_to_AXI/solution1/sim/vhdl
+# Command line: wbtcv.exe -mode batch -source C:/xil2/etteplan-sp7-cal2/common/hls/parallel_to_AXI/solution1/sim/vhdl/xsim.dir/parallel_to_AXI/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/xil2/etteplan-sp7-cal2/common/hls/parallel_to_AXI/solution1/sim/vhdl/webtalk.log
+# Journal file: C:/xil2/etteplan-sp7-cal2/common/hls/parallel_to_AXI/solution1/sim/vhdl\webtalk.jou
+#-----------------------------------------------------------
+source C:/xil2/etteplan-sp7-cal2/common/hls/parallel_to_AXI/solution1/sim/vhdl/xsim.dir/parallel_to_AXI/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 16 16:32:20 2022...

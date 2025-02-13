@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'clear_flag' is power-on initialization." projectName="parallel_to_AXI" solutionName="solution1" date="2021-07-31T14:20:46.832+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="parallel_to_AXI" solutionName="solution1" date="2021-07-31T14:20:46.672+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1016] The critical path in module 'parallel_to_AXI' consists of the following:&#x9;wire read on port 'AXI' (parallel_to_AXI/src/parallel_to_AXI.cpp:4) [28]  (0 ns)&#xD;&#xA;&#x9;'add' operation ('add_ln324') [58]  (2.92 ns)&#xD;&#xA;&#x9;blocking operation 2.89 ns on control path)&#xD;&#xA;&#xD;&#xA;Resolution: For help on HLS 200-1016 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-1016.html" projectName="parallel_to_AXI" solutionName="solution1" date="2021-07-31T14:20:46.421+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-871] Estimated clock period (5.807ns) exceeds the target (target clock period: 5ns, clock uncertainty: 1.35ns, effective delay budget: 3.65ns).&#xD;&#xA;Resolution: For help on HLS 200-871 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-871.html" projectName="parallel_to_AXI" solutionName="solution1" date="2021-07-31T14:20:46.403+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-63] Unable to schedule bus write on port 'gmem' within the last cycle (II = 1).&#xD;&#xA;Please consider increasing the initiation interval of the pipeline." projectName="parallel_to_AXI" solutionName="solution1" date="2021-07-31T14:20:46.373+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-63] Unable to schedule bus read on port 'gmem' within the first cycle (II = 1).&#xD;&#xA;Please consider increasing the target initiation interval of the pipeline." projectName="parallel_to_AXI" solutionName="solution1" date="2021-07-31T14:20:46.353+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

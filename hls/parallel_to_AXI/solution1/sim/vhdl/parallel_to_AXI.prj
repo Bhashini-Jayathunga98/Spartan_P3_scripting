@@ -1,0 +1,7 @@
+vhdl xil_defaultlib "AESL_sim_pkg.vhd"
+sv work "glbl.v"
+vhdl xil_defaultlib "AESL_axi_master_gmem.vhd"
+vhdl xil_defaultlib "parallel_to_AXI.autotb.vhd"
+vhdl xil_defaultlib "parallel_to_AXI.vhd"
+vhdl xil_defaultlib "parallel_to_AXI_gmem_m_axi.vhd"
+

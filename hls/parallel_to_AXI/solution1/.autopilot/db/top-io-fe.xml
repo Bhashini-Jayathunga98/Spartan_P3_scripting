@@ -1,0 +1,14 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel src_name="parallel_to_AXI" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
+    <args>
+      <arg id="0" access_type="r" src_name="wdata" src_type="ap_uint&lt;32&gt;" src_isptr="0" src_bitwidth="32" src_size_or_depth="1" hw_interface="Register" hw_name="wdata" hw_bitwidth="32" hw_size_or_depth="1"/>
+      <arg id="1" access_type="r" src_name="wadd" src_type="ap_uint&lt;32&gt;" src_isptr="0" src_bitwidth="32" src_size_or_depth="1" hw_interface="Register" hw_name="wadd" hw_bitwidth="32" hw_size_or_depth="1"/>
+      <arg id="2" access_type="w" src_name="rdata" src_type="ap_uint&lt;32&gt;*" src_isptr="1" src_bitwidth="32" src_size_or_depth="1" hw_interface="Register" hw_name="rdata" hw_bitwidth="32" hw_size_or_depth="1"/>
+      <arg id="3" access_type="r" src_name="radd" src_type="ap_uint&lt;32&gt;" src_isptr="0" src_bitwidth="32" src_size_or_depth="1" hw_interface="Register" hw_name="radd" hw_bitwidth="32" hw_size_or_depth="1"/>
+      <arg id="4" access_type="r" src_name="cmd" src_type="ap_uint&lt;8&gt;" src_isptr="0" src_bitwidth="8" src_size_or_depth="1" hw_interface="Register" hw_name="cmd" hw_bitwidth="8" hw_size_or_depth="1"/>
+      <arg id="5" access_type="w" src_name="sta" src_type="ap_uint&lt;8&gt;*" src_isptr="1" src_bitwidth="8" src_size_or_depth="1" hw_interface="Register" hw_name="sta" hw_bitwidth="8" hw_size_or_depth="1"/>
+      <arg id="6" access_type="r" src_name="AXI" src_type="ap_uint&lt;32&gt;*" src_isptr="1" src_bitwidth="32" src_size_or_depth="256" hw_interface="MAXI" hw_name="gmem" hw_bitwidth="32" hw_size_or_depth="0" offset_bundle_interface="Register" offset_bundle_interface_name="AXI" offset="0x0"/>
+    </args>
+    <return src_type="void" src_bitwidth="0" hw_interface="" hw_name="" hw_bitwidth="0" offset="0x0"/>
+  </kernel>
+</root>

@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1627712447024">
+  <ports id="1" name="gmem" type="PortType" bitwidth="32" direction="DirInOut" iftype="IfTypeFifo">
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="wdata" type="PortType" originalName="wdata.V" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="wadd" type="PortType" originalName="wadd.V" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="rdata" type="PortType" originalName="rdata" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="5" name="radd" type="PortType" originalName="radd.V" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="cmd" type="PortType" originalName="cmd.V" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="sta" type="PortType" originalName="sta" bitwidth="8" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="8" name="AXI" type="PortType" originalName="AXI" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="81" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="84" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="87" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="89" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="91" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="92" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="93" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="94" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="97" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="100" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="103" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="104" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="105" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="106" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="109" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="112" source_obj="//@regions.0/@basic_blocks.5/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.1"/>
+  <edges id="113" source_obj="//@regions.0/@basic_blocks.5/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.2"/>
+  <edges id="114" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.2"/>
+  <edges id="117" source_obj="//@regions.0/@basic_blocks.5/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.3"/>
+  <edges id="122" source_obj="//@regions.0/@basic_blocks.5/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.4"/>
+  <edges id="123" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.5"/>
+  <edges id="124" source_obj="//@regions.0/@basic_blocks.5/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.5"/>
+  <edges id="127" source_obj="//@regions.0/@basic_blocks.5/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.6"/>
+  <edges id="132" source_obj="//@regions.0/@basic_blocks.5/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.7"/>
+  <edges id="133" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.7"/>
+  <edges id="138" source_obj="//@regions.0/@basic_blocks.5/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.8"/>
+  <edges id="141" source_obj="//@regions.0/@basic_blocks.5/@node_objs.9" sink_obj="//@ports.6"/>
+  <edges id="145" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.10"/>
+  <edges id="146" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.11"/>
+  <edges id="147" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="148" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="149" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="151" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="153" source_obj="//@regions.0/@basic_blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="154" source_obj="//@regions.0/@basic_blocks.3/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="155" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="157" source_obj="//@regions.0/@basic_blocks.3/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.3"/>
+  <edges id="160" source_obj="//@regions.0/@basic_blocks.3/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.4"/>
+  <edges id="161" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.5"/>
+  <edges id="162" source_obj="//@regions.0/@basic_blocks.3/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.5"/>
+  <edges id="165" source_obj="//@regions.0/@basic_blocks.3/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.6"/>
+  <edges id="169" source_obj="//@regions.0/@basic_blocks.3/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.7"/>
+  <edges id="172" source_obj="//@regions.0/@basic_blocks.3/@node_objs.8" sink_obj="//@ports.3"/>
+  <edges id="173" source_obj="//@regions.0/@basic_blocks.3/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.8"/>
+  <edges id="175" source_obj="//@regions.0/@basic_blocks.3/@node_objs.9" sink_obj="//@ports.6"/>
+  <edges id="178" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.10"/>
+  <edges id="179" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.11"/>
+  <edges id="181" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="182" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="183" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.0"/>
+  <edges id="186" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.1"/>
+  <edges id="187" source_obj="//@regions.0/@basic_blocks.6/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.1"/>
+  <edges id="188" source_obj="//@regions.0/@basic_blocks.6/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.2"/>
+  <edges id="189" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.2"/>
+  <edges id="190" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.2"/>
+  <edges id="192" source_obj="//@regions.0/@basic_blocks.7/@node_objs.0" sink_obj="//@ports.6"/>
+  <edges id="195" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.1"/>
+  <edges id="196" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.2"/>
+  <edges id="377" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.6"/>
+  <edges id="378" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="379" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="380" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="381" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="382" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="383" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="384" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="385" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="386" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.5"/>
+  <edges id="387" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="388" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.7"/>
+  <edges id="389" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="390" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="391" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.3/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.7"/>
+  <edges id="392" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.5/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.8"/>
+  <edges id="393" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.5/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.7"/>
+  <edges id="394" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="395" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.1"/>
+  <edges id="396" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.10"/>
+  <edges id="397" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.10"/>
+  <edges id="2147483647" source_obj="//@regions.0/@basic_blocks.5/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.6"/>
+  <edges id="2147483647" source_obj="//@regions.0/@basic_blocks.5/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.6"/>
+  <edges id="2147483647" source_obj="//@regions.0/@basic_blocks.3/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="-123" source_obj="//@regions.0/@basic_blocks.5/@node_objs.5" sink_obj="//@ports.0"/>
+  <edges id="-161" source_obj="//@regions.0/@basic_blocks.3/@node_objs.5" sink_obj="//@ports.0"/>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="274" pipe_depth="15" RegionName="parallel_to_AXI">
+    <basic_blocks id="35" name="block_35" type="BlockType">
+      <controlOutputObjs>block_72</controlOutputObjs>
+      <controlOutputObjs>block_55</controlOutputObjs>
+      <controlOutputObjs>block_40</controlOutputObjs>
+      <controlOutputObjs>block_38</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="AXI_read" lineNumber="4" originalName="AXI" fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" fileDirectory=".." contextFuncName="parallel_to_AXI" bitwidth="64" opcode="read" m_display="1" m_isOnCriticalPath="true" m_isLCDNode="true" m_isStartOfPath="true" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" linenumber="4" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="parallel_to_AXI"/>
+        <dataInputObjs>AXI</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="cmd_read" lineNumber="4" fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" fileDirectory=".." contextFuncName="parallel_to_AXI" bitwidth="8" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" linenumber="4" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="parallel_to_AXI"/>
+        <dataInputObjs>cmd</dataInputObjs>
+        <dataOutputObjs>switch</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="radd_read" lineNumber="4" fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" fileDirectory=".." contextFuncName="parallel_to_AXI" bitwidth="32" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" linenumber="4" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="parallel_to_AXI"/>
+        <dataInputObjs>radd</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="wadd_read" lineNumber="4" fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" fileDirectory=".." contextFuncName="parallel_to_AXI" bitwidth="32" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" linenumber="4" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="parallel_to_AXI"/>
+        <dataInputObjs>wadd</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="wdata_read" lineNumber="4" fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" fileDirectory=".." contextFuncName="parallel_to_AXI" bitwidth="32" opcode="read" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" linenumber="4" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="parallel_to_AXI"/>
+        <dataInputObjs>wdata</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="clear_flag_load" lineNumber="874" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h" fileDirectory=".." contextFuncName="operator_eq_32_true" bitwidth="1" opcode="load" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h" linenumber="874" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator==&amp;lt;32, true&amp;gt;"/>
+        <dataOutputObjs>br</dataOutputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="_ln15" lineNumber="15" fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" fileDirectory=".." contextFuncName="parallel_to_AXI" opcode="switch" m_display="0" m_delay="1.2" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" linenumber="15" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="parallel_to_AXI"/>
+        <dataInputObjs>read</dataInputObjs>
+        <controlInputObjs>block_72</controlInputObjs>
+        <controlInputObjs>block_55</controlInputObjs>
+        <controlInputObjs>block_40</controlInputObjs>
+        <controlInputObjs>block_38</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <fileValidLineNumbers fileName="parallel_to_AXI/src/parallel_to_AXI.cpp">
+        <validLinenumbers>4</validLinenumbers>
+        <validLinenumbers>15</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h">
+        <validLinenumbers>874</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="38" name="block_38" type="BlockType">
+      <controlInputObjs>block_35</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>.thread</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="clear_flag_write_ln324" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." contextFuncName="operator_assign" opcode="store" m_display="0" m_delay="1.39" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="br_ln0" opcode="br" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <controlInputObjs>.thread</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h">
+        <validLinenumbers>324</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="40" name="block_40" type="BlockType">
+      <controlInputObjs>block_35</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>.thread</controlOutputObjs>
+      <controlOutputObjs>bb125</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="br_ln21" lineNumber="21" fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" fileDirectory=".." contextFuncName="parallel_to_AXI" opcode="br" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" linenumber="21" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="parallel_to_AXI"/>
+        <dataInputObjs>load</dataInputObjs>
+        <controlInputObjs>bb125</controlInputObjs>
+        <controlInputObjs>.thread</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="parallel_to_AXI/src/parallel_to_AXI.cpp">
+        <validLinenumbers>21</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="53" name="bb125" type="BlockType">
+      <controlInputObjs>block_40</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.thread</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="shl_ln324_1" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." rtlName="shl_ln324_1_fu_186_p3" contextFuncName="operator_assign" bitwidth="34" opcode="bitconcatenate" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="zext_ln324_1" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." rtlName="zext_ln324_1_fu_194_p1" contextFuncName="operator_assign" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="add_ln324_1" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." rtlName="add_ln324_1_fu_198_p2" contextFuncName="operator_assign" bitwidth="64" opcode="add" m_display="0" m_delay="2.92" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="trunc_ln324_1" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." rtlName="trunc_ln324_1_fu_204_p4" contextFuncName="operator_assign" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="sext_ln324_1" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." rtlName="sext_ln324_1_fu_214_p1" contextFuncName="operator_assign" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="gmem_addr_1" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." contextFuncName="operator_assign" bitwidth="32" opcode="getelementptr" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>gmem</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>readreq</dataOutputObjs>
+        <dataOutputObjs>read</dataOutputObjs>
+        <dataOutputObjs>gmem</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="gmem_load_req" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." contextFuncName="operator_assign" bitwidth="1" opcode="readreq" nodeLabel="7.0" nodeLatency="6" m_display="1" m_delay="3.65" m_isLCDNode="true" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataInputObjs>writeresp</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="gmem_addr_1_read" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." contextFuncName="operator_assign" bitwidth="32" opcode="read" nodeLabel="14.0" m_display="1" m_delay="3.65" m_isLCDNode="true" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <dataOutputObjs>read</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="rdata_write_ln324" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." contextFuncName="operator_assign" opcode="write" nodeLabel="14.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>rdata</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="sta_write_ln324" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." contextFuncName="operator_assign" opcode="write" nodeLabel="14.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataOutputObjs>sta</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="clear_flag_write_ln324" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." contextFuncName="operator_assign" opcode="store" m_display="0" m_delay="1.39" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="br_ln26" lineNumber="26" fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" fileDirectory=".." contextFuncName="parallel_to_AXI" opcode="br" nodeLabel="14.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" linenumber="26" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="parallel_to_AXI"/>
+        <controlInputObjs>.thread</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="parallel_to_AXI/src/parallel_to_AXI.cpp">
+        <validLinenumbers>26</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h">
+        <validLinenumbers>324</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="55" name="block_55" type="BlockType">
+      <controlInputObjs>block_35</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>.thread</controlOutputObjs>
+      <controlOutputObjs>bb124</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="br_ln15" lineNumber="15" fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" fileDirectory=".." contextFuncName="parallel_to_AXI" opcode="br" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" linenumber="15" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="parallel_to_AXI"/>
+        <dataInputObjs>load</dataInputObjs>
+        <controlInputObjs>bb124</controlInputObjs>
+        <controlInputObjs>.thread</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="parallel_to_AXI/src/parallel_to_AXI.cpp">
+        <validLinenumbers>15</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="68" name="bb124" type="BlockType">
+      <controlInputObjs>block_55</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.thread</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="shl_ln" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." rtlName="shl_ln_fu_224_p3" contextFuncName="operator_assign" bitwidth="34" opcode="bitconcatenate" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="zext_ln324" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." rtlName="zext_ln324_fu_232_p1" contextFuncName="operator_assign" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="add_ln324" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." rtlName="add_ln324_fu_236_p2" contextFuncName="operator_assign" bitwidth="64" opcode="add" m_display="1" m_delay="2.92" m_isOnCriticalPath="true" m_isLCDNode="true" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>writereq</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="trunc_ln" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." rtlName="trunc_ln_fu_242_p4" contextFuncName="operator_assign" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="sext_ln324" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." rtlName="sext_ln324_fu_252_p1" contextFuncName="operator_assign" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="gmem_addr" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." contextFuncName="operator_assign" bitwidth="32" opcode="getelementptr" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>gmem</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>writereq</dataOutputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <dataOutputObjs>writeresp</dataOutputObjs>
+        <dataOutputObjs>gmem</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="gmem_addr_req" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." contextFuncName="operator_assign" bitwidth="1" opcode="writereq" nodeLabel="1.0" m_display="1" m_delay="3.65" m_isLCDNode="true" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="gmem_addr_write_ln324" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." contextFuncName="operator_assign" opcode="write" nodeLabel="2.0" m_display="1" m_delay="3.65" m_isLCDNode="true" m_isStartOfPath="true" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="gmem_addr_resp" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." contextFuncName="operator_assign" bitwidth="1" opcode="writeresp" nodeLabel="3.0" nodeLatency="4" m_display="1" m_delay="3.65" m_isLCDNode="true" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>readreq</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="sta_write_ln324" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." contextFuncName="operator_assign" opcode="write" nodeLabel="14.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataOutputObjs>sta</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="clear_flag_write_ln324" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." contextFuncName="operator_assign" opcode="store" m_display="0" m_delay="1.39" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="br_ln20" lineNumber="20" fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" fileDirectory=".." contextFuncName="parallel_to_AXI" opcode="br" nodeLabel="14.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" linenumber="20" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="parallel_to_AXI"/>
+        <controlInputObjs>.thread</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="parallel_to_AXI/src/parallel_to_AXI.cpp">
+        <validLinenumbers>20</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h">
+        <validLinenumbers>324</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="72" name="block_72" type="BlockType">
+      <controlInputObjs>block_35</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>bb</controlOutputObjs>
+      <controlOutputObjs>.thread</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="icmp_ln874" lineNumber="874" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="icmp_ln874_fu_262_p2" contextFuncName="operator_eq_32_true" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.21" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h" linenumber="874" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator==&amp;lt;32, true&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="and_ln34" lineNumber="34" fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" fileDirectory=".." rtlName="and_ln34_fu_268_p2" contextFuncName="parallel_to_AXI" bitwidth="1" opcode="and" m_display="0" m_delay="0.8" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" linenumber="34" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="parallel_to_AXI"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="br_ln34" lineNumber="34" fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" fileDirectory=".." contextFuncName="parallel_to_AXI" opcode="br" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" linenumber="34" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="parallel_to_AXI"/>
+        <dataInputObjs>and</dataInputObjs>
+        <controlInputObjs>.thread</controlInputObjs>
+        <controlInputObjs>bb</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="parallel_to_AXI/src/parallel_to_AXI.cpp">
+        <validLinenumbers>34</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h">
+        <validLinenumbers>874</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="76" name="bb" type="BlockType">
+      <controlInputObjs>block_72</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.thread</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="sta_write_ln324" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." contextFuncName="operator_assign" opcode="write" nodeLabel="14.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <dataOutputObjs>sta</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="clear_flag_write_ln324" lineNumber="324" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" fileDirectory=".." contextFuncName="operator_assign" opcode="store" m_display="0" m_delay="1.39" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h" linenumber="324" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="operator="/>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="br_ln40" lineNumber="40" fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" fileDirectory=".." contextFuncName="parallel_to_AXI" opcode="br" nodeLabel="14.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" linenumber="40" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="parallel_to_AXI"/>
+        <controlInputObjs>.thread</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="parallel_to_AXI/src/parallel_to_AXI.cpp">
+        <validLinenumbers>40</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h">
+        <validLinenumbers>324</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="78" name=".thread" type="BlockType">
+      <controlInputObjs>block_38</controlInputObjs>
+      <controlInputObjs>block_40</controlInputObjs>
+      <controlInputObjs>bb125</controlInputObjs>
+      <controlInputObjs>block_55</controlInputObjs>
+      <controlInputObjs>bb124</controlInputObjs>
+      <controlInputObjs>block_72</controlInputObjs>
+      <controlInputObjs>bb</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="_ln42" lineNumber="42" fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" fileDirectory=".." contextFuncName="parallel_to_AXI" opcode="ret" nodeLabel="14.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="parallel_to_AXI/src/parallel_to_AXI.cpp" linenumber="42" fileDirectory="C:\xil2\etteplan-sp7-cal2\common\hls" functionName="parallel_to_AXI"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="parallel_to_AXI/src/parallel_to_AXI.cpp">
+        <validLinenumbers>42</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <regnodes realName="cmd_read_reg_274">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="clear_flag_load_reg_283">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="and_ln34_reg_299">
+    <nodeIds>70</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_addr_1_reg_287">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_addr_reg_293">
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <regnodes realName="wdata_read_reg_278">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <expressionNodes realName="add_ln324_1_fu_198">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln324_fu_232">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln324_fu_236">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_addr_fu_256">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln_fu_224">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_addr_1_fu_218">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln324_1_fu_186">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln324_1_fu_204">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln34_fu_268">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln874_fu_262">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln324_1_fu_194">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln324_fu_252">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln324_1_fu_214">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_242">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="AXI_read_read_fu_94">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln324_write_fu_152">
+    <nodeIds>49</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln324_write_fu_131">
+    <nodeIds>63</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_store_fu_176">
+    <nodeIds>51</nodeIds>
+    <nodeIds>66</nodeIds>
+  </ioNodes>
+  <ioNodes realName="cmd_read_read_fu_100">
+    <nodeIds>29</nodeIds>
+  </ioNodes>
+  <ioNodes realName="radd_read_read_fu_106">
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="gmem_addr_1_read_read_fu_147">
+    <nodeIds>48</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_store_fu_170">
+    <nodeIds>36</nodeIds>
+    <nodeIds>74</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_readreq_fu_140">
+    <nodeIds>47</nodeIds>
+  </ioNodes>
+  <ioNodes realName="wadd_read_read_fu_112">
+    <nodeIds>31</nodeIds>
+  </ioNodes>
+  <ioNodes realName="clear_flag_load_load_fu_182">
+    <nodeIds>33</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_160">
+    <nodeIds>50</nodeIds>
+    <nodeIds>65</nodeIds>
+    <nodeIds>73</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_writeresp_fu_124">
+    <nodeIds>62</nodeIds>
+    <nodeIds>64</nodeIds>
+  </ioNodes>
+  <ioNodes realName="wdata_read_read_fu_118">
+    <nodeIds>32</nodeIds>
+  </ioNodes>
+  <ioPorts name="AXI">
+    <contents name="read">
+      <nodeIds>28</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="cmd">
+    <contents name="read">
+      <nodeIds>29</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem"/>
+  <ioPorts name="radd">
+    <contents name="read">
+      <nodeIds>30</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="rdata">
+    <contents name="write">
+      <nodeIds>49</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="sta">
+    <contents name="write">
+      <nodeIds>65</nodeIds>
+      <nodeIds>50</nodeIds>
+      <nodeIds>73</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="wadd">
+    <contents name="read">
+      <nodeIds>31</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="wdata">
+    <contents name="read">
+      <nodeIds>32</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="62" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="63" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="64" stage="5" latency="5"/>
+    </states>
+    <states id="5">
+      <operations id="64" stage="4" latency="5"/>
+    </states>
+    <states id="6">
+      <operations id="64" stage="3" latency="5"/>
+    </states>
+    <states id="7">
+      <operations id="64" stage="2" latency="5"/>
+    </states>
+    <states id="8">
+      <operations id="47" stage="7" latency="7"/>
+      <operations id="64" stage="1" latency="5"/>
+    </states>
+    <states id="9">
+      <operations id="47" stage="6" latency="7"/>
+    </states>
+    <states id="10">
+      <operations id="47" stage="5" latency="7"/>
+    </states>
+    <states id="11">
+      <operations id="47" stage="4" latency="7"/>
+    </states>
+    <states id="12">
+      <operations id="47" stage="3" latency="7"/>
+    </states>
+    <states id="13">
+      <operations id="47" stage="2" latency="7"/>
+    </states>
+    <states id="14">
+      <operations id="47" stage="1" latency="7"/>
+    </states>
+    <states id="15">
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="parallel_to_AXI" mII="1" mDepth="15" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="14" mMaxLatency="14">
+      <basicBlocks>35</basicBlocks>
+      <basicBlocks>38</basicBlocks>
+      <basicBlocks>40</basicBlocks>
+      <basicBlocks>53</basicBlocks>
+      <basicBlocks>55</basicBlocks>
+      <basicBlocks>68</basicBlocks>
+      <basicBlocks>72</basicBlocks>
+      <basicBlocks>76</basicBlocks>
+      <basicBlocks>78</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

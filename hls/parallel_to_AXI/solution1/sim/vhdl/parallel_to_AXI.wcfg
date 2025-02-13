@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="parallel_to_AXI.wdb" id="1">
+         <top_modules>
+            <top_module name="apatb_parallel_to_AXI_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+   </zoom_setting>
+   <column_width_setting>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="group1" type="group">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group2" type="group">
+         <obj_property name="label">C InOuts</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group3" type="group">
+            <obj_property name="label">AXI(axi_master)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="group4" type="group">
+               <obj_property name="label">Read Channel</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_RRESP" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_RRESP[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_RRESP[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_RUSER" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_RUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_RUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_RID" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_RID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_RID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_RDATA" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_RDATA[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_RDATA[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_ARUSER" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_ARREGION" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARREGION[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARREGION[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_ARQOS" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARQOS[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARQOS[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_ARPROT" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARPROT[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARPROT[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_ARCACHE" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARCACHE[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARCACHE[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_ARLOCK" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARLOCK[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARLOCK[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_ARBURST" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARBURST[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARBURST[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_ARSIZE" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARSIZE[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARSIZE[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_ARLEN" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARLEN[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARLEN[7:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_ARID" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_ARADDR" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARADDR[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARADDR[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="group5" type="group">
+               <obj_property name="label">Write Channel</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_BUSER" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_BUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_BUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_BID" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_BID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_BID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_BRESP" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_BRESP[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_BRESP[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_WUSER" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_WUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_WUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_WID" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_WID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_WID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_WSTRB" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_WSTRB[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_WSTRB[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_WDATA" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_WDATA[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_WDATA[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_AWUSER" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_AWREGION" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWREGION[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWREGION[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_AWQOS" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWQOS[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWQOS[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_AWPROT" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWPROT[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWPROT[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_AWCACHE" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWCACHE[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWCACHE[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_AWLOCK" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWLOCK[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWLOCK[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_AWBURST" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWBURST[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWBURST[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_AWSIZE" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWSIZE[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWSIZE[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_AWLEN" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWLEN[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWLEN[7:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_AWID" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_AWADDR" type="array">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWADDR[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWADDR[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="group6" type="group">
+               <obj_property name="label">Handshakes</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_BREADY" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem_BREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_BREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_BVALID" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem_BVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_BVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_RLAST" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem_RLAST</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_RLAST</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_RREADY" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem_RREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_RREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_RVALID" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem_RVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_RVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_ARREADY" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_ARVALID" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_WLAST" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem_WLAST</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_WLAST</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_WREADY" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem_WREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_WREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_WVALID" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem_WVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_WVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_AWREADY" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/m_axi_gmem_AWVALID" type="logic">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group52" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group53" type="group">
+            <obj_property name="label">sta(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/sta" type="array">
+               <obj_property name="ElementShortName">sta[7:0]</obj_property>
+               <obj_property name="ObjectShortName">sta[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group55" type="group">
+            <obj_property name="label">rdata(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/rdata" type="array">
+               <obj_property name="ElementShortName">rdata[7:0]</obj_property>
+               <obj_property name="ObjectShortName">rdata[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group57" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group58" type="group">
+            <obj_property name="label">return(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/AXI" type="array">
+               <obj_property name="ElementShortName">AXI[63:0]</obj_property>
+               <obj_property name="ObjectShortName">AXI[63:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group60" type="group">
+            <obj_property name="label">cmd(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/cmd" type="array">
+               <obj_property name="ElementShortName">cmd[7:0]</obj_property>
+               <obj_property name="ObjectShortName">cmd[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group62" type="group">
+            <obj_property name="label">radd(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/radd" type="array">
+               <obj_property name="ElementShortName">radd[7:0]</obj_property>
+               <obj_property name="ObjectShortName">radd[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group64" type="group">
+            <obj_property name="label">wadd(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/wadd" type="array">
+               <obj_property name="ElementShortName">wadd[7:0]</obj_property>
+               <obj_property name="ObjectShortName">wadd[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group66" type="group">
+            <obj_property name="label">wdata(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/wdata" type="array">
+               <obj_property name="ElementShortName">wdata[7:0]</obj_property>
+               <obj_property name="ObjectShortName">wdata[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group68" type="group">
+         <obj_property name="label">Block-level IO Handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/ap_start" type="logic">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/ap_done" type="logic">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/ap_idle" type="logic">
+            <obj_property name="ElementShortName">ap_idle</obj_property>
+            <obj_property name="ObjectShortName">ap_idle</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/ap_ready" type="logic">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group73" type="group">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/ap_rst_n" type="logic">
+            <obj_property name="ElementShortName">ap_rst_n</obj_property>
+            <obj_property name="ObjectShortName">ap_rst_n</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group75" type="group">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_parallel_to_AXI_top/AESL_inst_parallel_to_AXI/ap_clk" type="logic">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group77" type="group">
+      <obj_property name="label">Test Bench Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group78" type="group">
+         <obj_property name="label">Internal Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group79" type="group">
+            <obj_property name="label">Simulation Status</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/AUTOTB_TRANSACTION_NUM" type="other">
+               <obj_property name="ElementShortName">AUTOTB_TRANSACTION_NUM</obj_property>
+               <obj_property name="ObjectShortName">AUTOTB_TRANSACTION_NUM</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/ready_cnt" type="array">
+               <obj_property name="ElementShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/done_cnt" type="array">
+               <obj_property name="ElementShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group80" type="group">
+            <obj_property name="label">Port Depth</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/LENGTH_gmem" type="other">
+               <obj_property name="ElementShortName">LENGTH_gmem</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_gmem</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/LENGTH_wdata" type="other">
+               <obj_property name="ElementShortName">LENGTH_wdata</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_wdata</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/LENGTH_wadd" type="other">
+               <obj_property name="ElementShortName">LENGTH_wadd</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_wadd</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/LENGTH_rdata" type="other">
+               <obj_property name="ElementShortName">LENGTH_rdata</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_rdata</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/LENGTH_radd" type="other">
+               <obj_property name="ElementShortName">LENGTH_radd</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_radd</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/LENGTH_cmd" type="other">
+               <obj_property name="ElementShortName">LENGTH_cmd</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_cmd</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/LENGTH_sta" type="other">
+               <obj_property name="ElementShortName">LENGTH_sta</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_sta</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/LENGTH_AXI" type="other">
+               <obj_property name="ElementShortName">LENGTH_AXI</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_AXI</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group92" type="group">
+         <obj_property name="label">C InOuts</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group93" type="group">
+            <obj_property name="label">AXI(axi_master)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="group94" type="group">
+               <obj_property name="label">Read Channel</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_RRESP" type="array">
+                  <obj_property name="ElementShortName">gmem_RRESP[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_RRESP[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_RUSER" type="array">
+                  <obj_property name="ElementShortName">gmem_RUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_RUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_RID" type="array">
+                  <obj_property name="ElementShortName">gmem_RID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_RID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_RDATA" type="array">
+                  <obj_property name="ElementShortName">gmem_RDATA[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_RDATA[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_ARUSER" type="array">
+                  <obj_property name="ElementShortName">gmem_ARUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_ARREGION" type="array">
+                  <obj_property name="ElementShortName">gmem_ARREGION[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARREGION[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_ARQOS" type="array">
+                  <obj_property name="ElementShortName">gmem_ARQOS[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARQOS[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_ARPROT" type="array">
+                  <obj_property name="ElementShortName">gmem_ARPROT[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARPROT[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_ARCACHE" type="array">
+                  <obj_property name="ElementShortName">gmem_ARCACHE[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARCACHE[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_ARLOCK" type="array">
+                  <obj_property name="ElementShortName">gmem_ARLOCK[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARLOCK[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_ARBURST" type="array">
+                  <obj_property name="ElementShortName">gmem_ARBURST[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARBURST[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_ARSIZE" type="array">
+                  <obj_property name="ElementShortName">gmem_ARSIZE[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARSIZE[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_ARLEN" type="array">
+                  <obj_property name="ElementShortName">gmem_ARLEN[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARLEN[7:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_ARID" type="array">
+                  <obj_property name="ElementShortName">gmem_ARID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_ARADDR" type="array">
+                  <obj_property name="ElementShortName">gmem_ARADDR[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARADDR[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="group95" type="group">
+               <obj_property name="label">Write Channel</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_BUSER" type="array">
+                  <obj_property name="ElementShortName">gmem_BUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_BUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_BID" type="array">
+                  <obj_property name="ElementShortName">gmem_BID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_BID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_BRESP" type="array">
+                  <obj_property name="ElementShortName">gmem_BRESP[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_BRESP[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_WUSER" type="array">
+                  <obj_property name="ElementShortName">gmem_WUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_WUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_WID" type="array">
+                  <obj_property name="ElementShortName">gmem_WID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_WID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_WSTRB" type="array">
+                  <obj_property name="ElementShortName">gmem_WSTRB[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_WSTRB[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_WDATA" type="array">
+                  <obj_property name="ElementShortName">gmem_WDATA[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_WDATA[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_AWUSER" type="array">
+                  <obj_property name="ElementShortName">gmem_AWUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_AWREGION" type="array">
+                  <obj_property name="ElementShortName">gmem_AWREGION[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWREGION[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_AWQOS" type="array">
+                  <obj_property name="ElementShortName">gmem_AWQOS[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWQOS[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_AWPROT" type="array">
+                  <obj_property name="ElementShortName">gmem_AWPROT[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWPROT[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_AWCACHE" type="array">
+                  <obj_property name="ElementShortName">gmem_AWCACHE[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWCACHE[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_AWLOCK" type="array">
+                  <obj_property name="ElementShortName">gmem_AWLOCK[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWLOCK[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_AWBURST" type="array">
+                  <obj_property name="ElementShortName">gmem_AWBURST[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWBURST[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_AWSIZE" type="array">
+                  <obj_property name="ElementShortName">gmem_AWSIZE[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWSIZE[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_AWLEN" type="array">
+                  <obj_property name="ElementShortName">gmem_AWLEN[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWLEN[7:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_AWID" type="array">
+                  <obj_property name="ElementShortName">gmem_AWID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_AWADDR" type="array">
+                  <obj_property name="ElementShortName">gmem_AWADDR[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWADDR[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="group96" type="group">
+               <obj_property name="label">Handshakes</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_BREADY" type="logic">
+                  <obj_property name="ElementShortName">gmem_BREADY</obj_property>
+                  <obj_property name="ObjectShortName">gmem_BREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_BVALID" type="logic">
+                  <obj_property name="ElementShortName">gmem_BVALID</obj_property>
+                  <obj_property name="ObjectShortName">gmem_BVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_RLAST" type="logic">
+                  <obj_property name="ElementShortName">gmem_RLAST</obj_property>
+                  <obj_property name="ObjectShortName">gmem_RLAST</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_RREADY" type="logic">
+                  <obj_property name="ElementShortName">gmem_RREADY</obj_property>
+                  <obj_property name="ObjectShortName">gmem_RREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_RVALID" type="logic">
+                  <obj_property name="ElementShortName">gmem_RVALID</obj_property>
+                  <obj_property name="ObjectShortName">gmem_RVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_ARREADY" type="logic">
+                  <obj_property name="ElementShortName">gmem_ARREADY</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_ARVALID" type="logic">
+                  <obj_property name="ElementShortName">gmem_ARVALID</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_WLAST" type="logic">
+                  <obj_property name="ElementShortName">gmem_WLAST</obj_property>
+                  <obj_property name="ObjectShortName">gmem_WLAST</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_WREADY" type="logic">
+                  <obj_property name="ElementShortName">gmem_WREADY</obj_property>
+                  <obj_property name="ObjectShortName">gmem_WREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_WVALID" type="logic">
+                  <obj_property name="ElementShortName">gmem_WVALID</obj_property>
+                  <obj_property name="ObjectShortName">gmem_WVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_AWREADY" type="logic">
+                  <obj_property name="ElementShortName">gmem_AWREADY</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_parallel_to_AXI_top/gmem_AWVALID" type="logic">
+                  <obj_property name="ElementShortName">gmem_AWVALID</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group142" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group143" type="group">
+            <obj_property name="label">sta(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/sta" type="array">
+               <obj_property name="ElementShortName">sta[7:0]</obj_property>
+               <obj_property name="ObjectShortName">sta[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group145" type="group">
+            <obj_property name="label">rdata(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/rdata" type="array">
+               <obj_property name="ElementShortName">rdata[7:0]</obj_property>
+               <obj_property name="ObjectShortName">rdata[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group147" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group148" type="group">
+            <obj_property name="label">return(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/AXI" type="array">
+               <obj_property name="ElementShortName">AXI[63:0]</obj_property>
+               <obj_property name="ObjectShortName">AXI[63:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group150" type="group">
+            <obj_property name="label">cmd(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/cmd" type="array">
+               <obj_property name="ElementShortName">cmd[7:0]</obj_property>
+               <obj_property name="ObjectShortName">cmd[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group152" type="group">
+            <obj_property name="label">radd(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/radd" type="array">
+               <obj_property name="ElementShortName">radd[7:0]</obj_property>
+               <obj_property name="ObjectShortName">radd[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group154" type="group">
+            <obj_property name="label">wadd(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/wadd" type="array">
+               <obj_property name="ElementShortName">wadd[7:0]</obj_property>
+               <obj_property name="ObjectShortName">wadd[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group156" type="group">
+            <obj_property name="label">wdata(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_parallel_to_AXI_top/wdata" type="array">
+               <obj_property name="ElementShortName">wdata[7:0]</obj_property>
+               <obj_property name="ObjectShortName">wdata[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

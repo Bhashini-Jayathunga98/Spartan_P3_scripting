@@ -1,0 +1,5 @@
+   Build using "C:/Xilinx/Vitis/2020.1/tps/win64/msys64/mingw64/bin/g++"
+   Compiling main.cpp_pre.cpp.tb.cpp
+   Compiling apatb_parallel_to_AXI.cpp
+   Compiling parallel_to_AXI.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

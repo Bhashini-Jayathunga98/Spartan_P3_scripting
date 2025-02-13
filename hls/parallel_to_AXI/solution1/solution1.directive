@@ -1,0 +1,58 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="parallel_to_AXI" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_none" value="" positionalBoolean="mode"/>
+                <option name="port" value="wdata" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="parallel_to_AXI" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_none" value="" positionalBoolean="mode"/>
+                <option name="port" value="wadd" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="parallel_to_AXI" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_ovld" value="" positionalBoolean="mode"/>
+                <option name="port" value="rdata" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="parallel_to_AXI" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_none" value="" positionalBoolean="mode"/>
+                <option name="port" value="radd" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="parallel_to_AXI" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="port" value="cmd" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="parallel_to_AXI" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_ovld" value="" positionalBoolean="mode"/>
+                <option name="port" value="sta" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="parallel_to_AXI" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="m_axi" value="" positionalBoolean="mode"/>
+                <option name="depth" value="1024"/>
+                <option name="port" value="AXI" positionalBoolean="4"/>
+                <option name="offset" value="direct"/>
+            </pragma>
+        </directive>
+        <directive functionName="parallel_to_AXI" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="parallel_to_AXI"/>
+            </pragma>
+        </directive>
+        <directive functionName="parallel_to_AXI" label="" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="enable_flush" value="" positionalBoolean="1"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

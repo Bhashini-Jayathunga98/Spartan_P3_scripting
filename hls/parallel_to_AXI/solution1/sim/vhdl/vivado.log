@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Jul 16 16:32:39 2022
+# Process ID: 20088
+# Current directory: C:/xil2/etteplan-sp7-cal2/common/hls/parallel_to_AXI/solution1/sim/vhdl
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: C:/xil2/etteplan-sp7-cal2/common/hls/parallel_to_AXI/solution1/sim/vhdl/vivado.log
+# Journal file: C:/xil2/etteplan-sp7-cal2/common/hls/parallel_to_AXI/solution1/sim/vhdl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+# current_fileset
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+# open_wave_database parallel_to_AXI.wdb
+open_wave_config C:/xil2/etteplan-sp7-cal2/common/hls/parallel_to_AXI/solution1/sim/vhdl/parallel_to_AXI.wcfg
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 16 16:33:38 2022...

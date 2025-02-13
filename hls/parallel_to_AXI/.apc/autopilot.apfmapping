@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="parallel_to_AXI.cpp" path="C:\xil2\etteplan-sp7-cal2\common\hls\parallel_to_AXI\src\parallel_to_AXI.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="C:\xil2\etteplan-sp7-cal2\common\hls\parallel_to_AXI\src\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

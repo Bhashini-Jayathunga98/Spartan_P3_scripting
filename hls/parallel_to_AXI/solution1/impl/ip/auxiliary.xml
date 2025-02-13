@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="parallel_to_AXI" xd:componentRef="parallel_to_AXI" xd:initiationInterval="1" xd:clockPeriod="5.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="*(AXI)" xd:originalName="AXI" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:arraySize="256" xd:dataWidth="32" xd:bufferDirection="inout"/>
+  <xd:arg xd:name="wdata" xd:originalName="wdata" xd:direction="in" xd:interfaceRef="wdata" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="wadd" xd:originalName="wadd" xd:direction="in" xd:interfaceRef="wadd" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(rdata)" xd:originalName="rdata" xd:direction="out" xd:interfaceRef="rdata" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="32" xd:firstOut="14"/>
+  <xd:arg xd:name="radd" xd:originalName="radd" xd:direction="in" xd:interfaceRef="radd" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="14"/>
+  <xd:arg xd:name="cmd" xd:originalName="cmd" xd:direction="in" xd:interfaceRef="cmd" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="8" xd:firstOut="14"/>
+  <xd:arg xd:name="*(sta)" xd:originalName="sta" xd:direction="out" xd:interfaceRef="sta" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="8" xd:firstOut="14"/>
+  <xd:arg xd:name="AXI" xd:originalName="AXI" xd:direction="in" xd:interfaceRef="AXI" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="64" xd:firstOut="14"/>
+  <xd:latencyEstimates xd:best-case="14" xd:worst-case="14" xd:average-case="14"/>
+  <xd:resourceEstimates xd:LUT="1035" xd:FF="1002" xd:BRAM="2" xd:DSP="0"/>
+</xd:acceleratorMap>
